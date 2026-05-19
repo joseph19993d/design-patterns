@@ -1,4 +1,4 @@
-package com.novasoftlaboratorys.model.clases;
+package com.novasoftlaboratorys.model.planetas;
 
 // esta es una clase "supuestamente vieja" que no implementa la interfaz IPlaneta, sera un caso de uso para ADAPTER PATTERN
 public class PlanetaViejo {

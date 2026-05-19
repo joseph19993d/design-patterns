@@ -1,4 +1,4 @@
-package com.novasoftlaboratorys.model.clases;
+package com.novasoftlaboratorys.model.planetas;
 import com.novasoftlaboratorys.interfaces.IPlaneta;
 
 public class PlanetaMarte implements IPlaneta {
@@ -48,8 +48,8 @@ public class PlanetaMarte implements IPlaneta {
 
     @Override
     public String toString() {
-        return "PlanetaTierra [NOMBRE=" + _nombre + ", area=" + area + ", forma=" + forma + ", alto=" + alto + ", ancho="
-                + ancho + "]";
+        return "PlanetaMarte [NOMBRE=" + _nombre + ", area=" + area + ", forma=" + forma + ", alto=" + alto + ", ancho="
+                + ancho +", id="+id+ "]";
     }
 
     @Override

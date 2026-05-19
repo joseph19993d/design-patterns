@@ -1,4 +1,4 @@
-package com.novasoftlaboratorys.model.clases;
+package com.novasoftlaboratorys.model.planetas;
 import com.novasoftlaboratorys.interfaces.IPlaneta;
 
 public class PlanetaViejoAdapter implements IPlaneta {
@@ -24,3 +24,4 @@ public class PlanetaViejoAdapter implements IPlaneta {
         viejo.salirViejoDiferenteAlDeLaInterfaz();
     }
 }
+

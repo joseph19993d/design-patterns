@@ -1,4 +1,4 @@
-package com.novasoftlaboratorys.model.clases;
+package com.novasoftlaboratorys.model.planetas;
 
 import com.novasoftlaboratorys.interfaces.IPlaneta;
 

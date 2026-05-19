@@ -5,8 +5,8 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 import com.novasoftlaboratorys.interfaces.IPlaneta;
-import com.novasoftlaboratorys.model.clases.PlanetaMarte;
-import com.novasoftlaboratorys.model.clases.PlanetaTierra;
+import com.novasoftlaboratorys.model.planetas.PlanetaMarte;
+import com.novasoftlaboratorys.model.planetas.PlanetaTierra;
 
 public class FactoryPlaneta {
 
