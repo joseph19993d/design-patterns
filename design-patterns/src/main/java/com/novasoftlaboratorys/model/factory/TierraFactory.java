@@ -1,10 +1,14 @@
 package com.novasoftlaboratorys.model.factory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.novasoftlaboratorys.interfaces.ILinajeFactory;
 import com.novasoftlaboratorys.interfaces.IPlaneta;
 import com.novasoftlaboratorys.interfaces.IJugador;
 import com.novasoftlaboratorys.model.planetas.PlanetaTierra;
 import com.novasoftlaboratorys.model.jugadores.jugadorTerricola;
+import java.util.function.Supplier;
 
 /**
  * ABSTRACT FACTORY — Linaje Terrícola
@@ -26,10 +30,10 @@ public class TierraFactory implements ILinajeFactory {
     public IJugador crearJugador(String nombre) {
         return new jugadorTerricola.Builder()
                 .setNombre(nombre)
-                .setBioma("Tierra")
+                .setBioma("Prados y desiertos")
                 .setRaza("Terricola")
                 .setClase("Guerrero")
-                .setEspecialidad("Espadas")
+                .setEspecialidad("Guerrero")
                 .build();
     }
 }

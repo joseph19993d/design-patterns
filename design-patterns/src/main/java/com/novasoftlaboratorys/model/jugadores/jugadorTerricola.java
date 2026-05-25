@@ -1,8 +1,8 @@
 package com.novasoftlaboratorys.model.jugadores;
 
-import com.novasoftlaboratorys.interfaces.IJugador;
-
 import java.util.UUID;
+
+import com.novasoftlaboratorys.interfaces.IJugador;
 
 public class jugadorTerricola implements IJugador {
 
@@ -13,25 +13,7 @@ public class jugadorTerricola implements IJugador {
     private final String bioma;
     private final String especialidad;
 
-    public jugadorTerricola(String nombre, String raza, String clase, String bioma, String especialidad) {
-        this.id = UUID.randomUUID();
-        this.nombre = nombre;
-        this.raza = raza;
-        this.clase = clase;
-        this.bioma = bioma;
-        this.especialidad = especialidad;
-    }
-
-    public jugadorTerricola(String nombre) {
-        this.id = UUID.randomUUID();
-        this.nombre = nombre;
-        this.raza = "Terricola";
-        this.clase = "Guerrero";
-        this.bioma = "Tierra";
-        this.especialidad = "Guerrero";
-    }
-
-    public jugadorTerricola(Builder builder) {
+    private jugadorTerricola(Builder builder) {
         this.id = UUID.randomUUID();
         this.nombre = builder.nombre;
         this.raza = builder.raza;
@@ -39,8 +21,7 @@ public class jugadorTerricola implements IJugador {
         this.bioma = builder.bioma;
         this.especialidad = builder.especialidad;
     }
-
-    // Builder
+    //Builder
     public static class Builder {
         private String nombre;
         private String raza;

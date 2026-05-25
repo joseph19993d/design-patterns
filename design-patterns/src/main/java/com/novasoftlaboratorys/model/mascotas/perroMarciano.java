@@ -17,6 +17,52 @@ public class perroMarciano implements IMascota {
         this.bioma = "Desierto Volcánico";
         this.especialidad = "Resistencia extrema";
     }
+
+    public perroMarciano(Builder builder) {
+        this.nombre = builder.nombre;
+        this.raza = builder.raza;
+        this.clase = builder.clase;
+        this.bioma = builder.bioma;
+        this.especialidad = builder.especialidad;
+    }
+
+    //Builder
+    public static class Builder {
+        private String nombre;
+        private String raza;
+        private String clase;
+        private String bioma;
+        private String especialidad;
+
+        public Builder setNombre(String nombre) {
+            this.nombre = nombre;
+            return this;
+        }
+
+        public Builder setRaza(String raza) {
+            this.raza = raza;
+            return this;
+        }
+
+        public Builder setClase(String clase) {
+            this.clase = clase;
+            return this;
+        }
+
+        public Builder setBioma(String bioma) {
+            this.bioma = bioma;
+            return this;
+        }
+
+        public Builder setEspecialidad(String especialidad) {
+            this.especialidad = especialidad;
+            return this;
+        }
+
+        public perroMarciano build() {
+            return new perroMarciano(this);
+        }
+    }
     
     @Override
     public void hacerSonido() {
